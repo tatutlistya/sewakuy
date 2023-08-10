@@ -111,6 +111,35 @@ tabs.forEach((tab, index)=>{
         all_artikel_text[index].classList.add('active');
     });
 })
+// Javascript for Sepeda Motor //
+const navspdmotor = document.querySelector("#sepedamotor-disp");
+const dispmotor = document.querySelector(".Layanan-motor");
+const terpopuler = document.querySelector(".terpopuler");
+const terkait = document.querySelector(".terkait");
+const populermotor = document.querySelector(".Populer-motor");
+const terkaitmotor = document.querySelector(".Terkait-motor"); 
+
+navspdmotor.onclick = (()=>{
+    navspdmotor.classList.add('active');
+    dispmotor.classList.add('active');
+});
+
+terkait.onclick = (()=>{
+    terkait.classList.add('active');
+    terpopuler.classList.remove('active');
+    terkaitmotor.classList.add('active');
+    populermotor.classList.remove('active');
+});
+terpopuler.onclick = (()=>{
+    terkait.classList.remove('active');
+    terpopuler.classList.add('active');
+    terkaitmotor.classList.remove('active');
+    populermotor.classList.add('active');
+})
+
+
+
+
 // Javascript for Location //
 // const inputkabkota = document.querySelector("#inkabkota-input");
 

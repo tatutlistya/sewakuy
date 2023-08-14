@@ -1,17 +1,16 @@
+
 :root {
     --dark-color: #000000;
     --light-color: #FFFFFF;
     --yellow-color: #FFB703;
     --blue-color: #007A7B;
 }
-
 *, html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
 body{
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -20,7 +19,6 @@ body{
     overflow-x: hidden;
     position: relative;
 }
-
 /* Header Section */
 header{
     position: fixed;
@@ -97,7 +95,6 @@ header nav ul a{
     display: none;
 }
 /* End Section of Header */
-
 /* Main Section */
 main{
     position: relative;
@@ -108,7 +105,6 @@ main{
     flex-flow: wrap;
     justify-content: center;
 }
-
     /* Beranda Section */
 .Beranda{
     display: flex;
@@ -177,7 +173,6 @@ main{
     font-weight: 700;
     letter-spacing: 5px;
     cursor: pointer;
-
     border-radius: 10px;
     background: #FFB703;
     padding: 7px 20px;
@@ -194,7 +189,6 @@ main{
 button.btn-daftar.active{
     background: #007A7B;
 }
-
 .img-beranda{
     right: 0px;
     position: relative;
@@ -202,7 +196,6 @@ button.btn-daftar.active{
 .img-beranda img{
     height: 510px;
 }
-
     /* Layanan Section */
 .Layanan{
     width: 100%;
@@ -481,6 +474,448 @@ button.btn-daftar.active{
         display: flow-root;
     }
 
+/* Layanan Motor, Mobil, Fotografi dkk */
+.Layanan-motor, .Layanan-mobil{
+    width: 100%;
+    background: #FFFFFF;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-top: 100px;
+    margin-top: -140px;
+    margin-bottom: -70px;
+    display: none;
+}
+.Layanan-motor.active, .Layanan-mobil.active{
+    display: block;
+}
+.menu_motor, .menu_mobil{
+    width: 100%;
+    padding: 0 200px;
+}
+.menu_motor ul, .menu_mobil ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 15px;
+    background: rgba(255, 183, 3, 0.56);
+    border-radius: 40px;
+}
+.menu_motor ul li button, .menu_mobil ul li button{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: none;
+    background: none;
+    color: #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menu_motor ul li button.active, .menu_mobil ul li button.active{
+    background: #FFFFFF;
+}
+.menu_motor ul li button:hover, .menu_mobil ul li button:hover{
+    background: #FFFFFF;
+}
+.content-motor, .content-mobil{
+    display: flex;
+    padding: 30px 100px;
+}
+.Populer-motor, .Populer-mobil{
+    width: 100%;
+    display: none;
+}
+.Populer-motor.active, .Populer-mobil.active{
+    display: block;
+}
+.Populer-motor h2, .Populer-mobil h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.Populer-motor ul, .Populer-mobil ul{
+    display: flex;
+    list-style: none;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+.Populer-motor ul li, .Populer-mobil ul li{
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Populer-motor ul li img, .Populer-mobil ul li img{
+    width: 250px;
+    border-radius: 10px;
+}
+.Populer-motor .layer, .Populer-mobil .layer{
+    border-radius: 10px;
+    background: transparent;
+    position: relative;
+    height: 320px;
+    width: 250px;
+    top: -327px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.Populer-motor .layer:hover, .Populer-mobil .layer:hover{
+    background: rgba(255, 183, 3, 0.7);
+}
+.Populer-motor .layer h3, .Populer-mobil .layer h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    cursor: default;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 0.5s;
+}
+.Populer-motor .layer:hover h3, .Populer-mobil .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.Populer-motor .layer nav, .Populer-mobil .layer nav{
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    cursor: default;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transition: 0.5s;
+}
+.Populer-motor .layer nav button, .Populer-mobil .layer nav button{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #000000;
+    border:none;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.Populer-motor .layer:hover nav, .Populer-mobil .layer:hover nav{
+    bottom: 35%;
+    opacity: 1;
+}
+.Populer-motor .layer nav button:hover, .Populer-mobil .layer nav button:hover{
+    background: #007A7B;
+}
+.Terkait-motor, .Terkait-mobil{
+    width: 100%;
+    display: none;
+}
+.Terkait-motor.active, .Terkait-mobil.active{
+    display: block;
+}
+.Terkait-motor ul, .Terkait-mobil .dispjm, .Terkait-mobil .dispjdm{
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 20px 100px;
+    justify-content: space-between;
+}
+.Terkait-motor ul li, .Terkait-mobil .dispjm li, .Terkait-mobil .dispjdm li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Terkait-motor ul li img, .Terkait-mobil .dispjm li img, .Terkait-mobil .dispjdm li img{
+    width: 195px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center ;
+    margin-top: 10px;
+}
+.Terkait-motor ul li .detail-layer, .Terkait-mobil .dispjm li .detail-layer, .Terkait-mobil .dispjdm li .detail-layer{
+    border-radius: 10px;
+    top: 5px;
+    background: transparent;
+    width: 195px;
+    height: 195px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.Terkait-motor ul li .detail-layer nav button, .Terkait-mobil .dispjm li .detail-layer nav button, .Terkait-mobil .dispjdm li .detail-layer nav button{
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #007A7B;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Terkait-motor ul li .detail-layer:hover nav button, .Terkait-mobil .dispjm li .detail-layer:hover nav button, .Terkait-mobil .dispjdm li:hover nav button{
+    bottom: 49%;
+    opacity: 1;
+}
+.Terkait-motor ul li strong, .Terkait-mobil .dispjm li strong, .Terkait-mobil .dispjdm li strong{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    cursor: default;
+}
+.Terkait-motor ul li .toko, .Terkait-mobil .dispjm li .toko, .Terkait-mobil .dispjdm li .toko{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-top: 5px;
+    padding: 0 5px;
+    cursor: default;
+}
+.Terkait-motor ul li .toko i .fa, .fas,.Terkait-mobil .dispjm li .toko i .fa, .fas,.Terkait-mobil .dispjdm li .toko i .fa, .fas{
+    font-size: 16px;
+}
+.Terkait-motor ul li .toko i span, .Terkait-mobil .dispjm li .toko i span, .Terkait-mobil .dispjdm li .toko i span{
+    font-weight: 500;
+    position: relative;
+    left: 10px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.Terkait-motor ul li .toko i span:hover, .Terkait-mobil .dispjm li .toko i span:hover, .Terkait-mobil .dispjdm li .toko i span:hover{
+    color: #007A7B;
+}
+.Terkait-motor ul li .rating-rent, .Terkait-mobil .dispjm li .rating-rent, .Terkait-mobil .dispjdm li .rating-rent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 5px;
+    position: relative;
+    padding: 0 5px;
+    cursor: default;
+}
+.Terkait-motor ul li .rating-rent .rating, .Terkait-mobil .dispjm li .rating-rent .rating, .Terkait-mobil .dispjdm li .rating-rent .rating{
+    font-size: 14px;
+    color: #FFB703;
+}
+.Terkait-motor ul li .rating-rent div h4, .Terkait-mobil .dispjm li .rating-rent div h4, .Terkait-mobil .dispjdm li .rating-rent div h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+.Terkait-motor ul li .harga, .Terkait-mobil .dispjm li .harga, .Terkait-mobil .dispjdm li .harga{
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    padding: 0 5px;
+    cursor: default;
+}
+.Terkait-motor ul li .harga .nominal, .Terkait-mobil .dispjm li .harga .nominal, .Terkait-mobil .dispjdm li .harga .nominal{
+    margin-left: 5px;
+}
+.Terkait-motor ul li .harga .waktu, .Terkait-mobil .dispjm li .harga .waktu, .Terkait-mobil .dispjdm li .harga .waktu{
+    font-size: 10px;
+}
+.Terkait-motor ul li .nav-terkait, .Terkait-mobil .dispjm li .nav-terkait, .Terkait-mobil .dispjdm li .nav-terkait{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.Terkait-motor ul li .nav-terkait .cart, .Terkait-mobil .dispjm li .nav-terkait .cart, .Terkait-mobil .dispjdm li .nav-terkait .cart{
+    display: flex;
+    align-items: center;
+}
+.Terkait-motor ul li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated{
+    font-size: 20px;
+    transform: scale(1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Terkait-motor ul li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated:hover{
+    color: #666;
+    transform: scale(1.2);
+}
+.Terkait-motor ul li .nav-terkait .booknow button, .Terkait-mobil .dispjm li .nav-terkait .booknow button, .Terkait-mobil .dispjdm li .nav-terkait .booknow button{
+    font-size: 16px;
+    font-weight: 600;
+    background: #007A7B;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Terkait-motor ul li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjm li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjdm li .nav-terkait .booknow button:hover{
+    background: #000000;
+}
+.Terkait-mobil .navmenumobil{
+    display: flex;
+    list-style: none;
+    padding: 20px 100px;
+    justify-content: space-between;
+    display: none;
+}
+.Terkait-mobil .navmenumobil.active{
+    display: flex;
+}
+.Terkait-mobil .navmenumobil li{
+    height: 320px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Terkait-mobil .navmenumobil li img{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.Terkait-mobil .navmenumobil .nav-m img{
+    width: 235px;
+}
+.Terkait-mobil .navmenumobil .nav-dm img{
+    width: 177px;
+}
+.Terkait-mobil .navmenumobil .nav-mdm .nmdm1{
+    width: 100px;
+    position: relative;
+    top: -100px;
+    right: -40px;
+}
+.Terkait-mobil .navmenumobil .nav-mdm .nmdm2{
+    width: 200px;
+    position: absolute;
+}
+.Terkait-mobil .navmenumobil li div{
+    width: 250px;
+    height: 320px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background: transparent;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.Terkait-mobil .navmenumobil li:hover{
+    background-color: rgba(0, 122, 123, 0.33);
+}
+.Terkait-mobil .navmenumobil li:hover h3{
+    transform: scale(1.2);
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #666;
+}
+.Terkait-mobil .navmenumobil li .dmtext{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Terkait-mobil .navmenumobil li .dmtext span{
+    bottom: -20px;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.Terkait-mobil .navmenumobil li:hover .dmtext span{
+    bottom: -20px;
+}
+.Terkait-mobil .navmenumobil li:hover .dmtext{
+    margin-top: 30px;
+}
+.Terkait-mobil .navmenumobil li:hover img{
+    transform: scale(1.1);
+    margin-bottom: 10px;
+}
+.Terkait-mobil .navmenumobil li div h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.Terkait-mobil .dispjm .backnav, .Terkait-mobil .dispjdm .backnav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    margin-top: -30px;
+    top: 205px;
+    margin-left: 10px;
+}
+.Terkait-mobil .dispjm .backnav i, .Terkait-mobil .dispjdm .backnav i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Terkait-mobil .dispjm .backnav h4, .Terkait-mobil .dispjdm .backnav h4{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #666;
+    cursor: default;
+}
+.Terkait-mobil .dispjm .backnav h4 span, .Terkait-mobil .dispjdm .backnav h4 span{
+    text-decoration: underline;
+}
+.Terkait-mobil .dispjm .backnav:hover, .Terkait-mobil .dispjdm .backnav:hover{
+    color: #007A7B;
+}
+.Terkait-mobil .dispjm, .Terkait-mobil .dispjdm{
+    display: none;
+}
+.Terkait-mobil .dispjm.active, .Terkait-mobil .dispjdm.active{
+    display: flex;
+}
 /* Artikel Section */
 .Artikel{
     width: 100%;
@@ -674,7 +1109,6 @@ button.btn-daftar.active{
     transform: scale(1.1);
     font-weight: 600;
 }
-
 /* Tentang Kami Section */
 .Tentang_kami{
     width: 100%;
@@ -712,7 +1146,6 @@ button.btn-daftar.active{
         letter-spacing: 1px;
         color: #FFFFFF;
     }
-
         /* Masuk & Daftar form */
 .Dftrmsk-form{
     position: fixed;
@@ -801,7 +1234,6 @@ button.btn-daftar.active{
 .input-box input:valid~label {
     top: -5px;
 }
-
 .input-box input{
     width: 100%;
     height: 100%;
@@ -896,9 +1328,7 @@ footer p{
     right: 2px;
     position: relative;
 }
-
 /* Page Responsive */
-
 @media screen and (max-width:1200px) {
     .navbar1{
         right: 50px;

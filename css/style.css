@@ -475,7 +475,7 @@ button.btn-daftar.active{
     }
 
 /* Layanan Motor, Mobil, Fotografi dkk */
-.Layanan-motor, .Layanan-mobil{
+.Layanan-motor, .Layanan-mobil, .Layanan-fotografi{
     width: 100%;
     background: #FFFFFF;
     min-height: 100vh;
@@ -488,14 +488,14 @@ button.btn-daftar.active{
     margin-bottom: -70px;
     display: none;
 }
-.Layanan-motor.active, .Layanan-mobil.active{
+.Layanan-motor.active, .Layanan-mobil.active, .Layanan-fotografi.active{
     display: block;
 }
-.menu_motor, .menu_mobil{
+.menu_motor, .menu_mobil, .menu_fotografi{
     width: 100%;
     padding: 0 200px;
 }
-.menu_motor ul, .menu_mobil ul{
+.menu_motor ul, .menu_mobil ul, .menu_fotografi ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -503,7 +503,7 @@ button.btn-daftar.active{
     background: rgba(255, 183, 3, 0.56);
     border-radius: 40px;
 }
-.menu_motor ul li button, .menu_mobil ul li button{
+.menu_motor ul li button, .menu_mobil ul li button, .menu_fotografi ul li button{
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 600;
@@ -515,24 +515,24 @@ button.btn-daftar.active{
     cursor: pointer;
     transition: 0.5s;
 }
-.menu_motor ul li button.active, .menu_mobil ul li button.active{
+.menu_motor ul li button.active, .menu_mobil ul li button.active, .menu_fotografi ul li button.active{
     background: #FFFFFF;
 }
-.menu_motor ul li button:hover, .menu_mobil ul li button:hover{
+.menu_motor ul li button:hover, .menu_mobil ul li button:hover, .menu_fotografi ul li button:hover{
     background: #FFFFFF;
 }
-.content-motor, .content-mobil{
+.content-motor, .content-mobil, .content-fotografi{
     display: flex;
     padding: 30px 100px;
 }
-.Populer-motor, .Populer-mobil{
+.Populer-motor, .Populer-mobil, .Populer-fotografi{
     width: 100%;
     display: none;
 }
-.Populer-motor.active, .Populer-mobil.active{
+.Populer-motor.active, .Populer-mobil.active, .Populer-fotografi.active{
     display: block;
 }
-.Populer-motor h2, .Populer-mobil h2{
+.Populer-motor h2, .Populer-mobil h2, .Populer-fotografi h2{
     font-size: 18px;
     font-weight: 500;
     color: #000;
@@ -542,22 +542,22 @@ button.btn-daftar.active{
     margin-top: 20px;
     text-decoration: underline;
 }
-.Populer-motor ul, .Populer-mobil ul{
+.Populer-motor ul, .Populer-mobil ul, .Populer-fotografi ul{
     display: flex;
     list-style: none;
     padding: 20px 100px;
     justify-content: space-between;
 }
-.Populer-motor ul li, .Populer-mobil ul li{
+.Populer-motor ul li, .Populer-mobil ul li, .Populer-fotografi ul li{
     height: 320px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.Populer-motor ul li img, .Populer-mobil ul li img{
+.Populer-motor ul li img, .Populer-mobil ul li img, .Populer-fotografi ul li img{
     width: 250px;
     border-radius: 10px;
 }
-.Populer-motor .layer, .Populer-mobil .layer{
+.Populer-motor .layer, .Populer-mobil .layer, .Populer-fotografi .layer{
     border-radius: 10px;
     background: transparent;
     position: relative;
@@ -569,10 +569,10 @@ button.btn-daftar.active{
     align-items: center;
     transition: 0.5s;
 }
-.Populer-motor .layer:hover, .Populer-mobil .layer:hover{
+.Populer-motor .layer:hover, .Populer-mobil .layer:hover, .Populer-fotografi .layer:hover{
     background: rgba(255, 183, 3, 0.7);
 }
-.Populer-motor .layer h3, .Populer-mobil .layer h3{
+.Populer-motor .layer h3, .Populer-mobil .layer h3, .Populer-fotografi .layer h3{
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -589,11 +589,11 @@ button.btn-daftar.active{
     align-items: end;
     transition: 0.5s;
 }
-.Populer-motor .layer:hover h3, .Populer-mobil .layer:hover h3{
+.Populer-motor .layer:hover h3, .Populer-mobil .layer:hover h3, .Populer-fotografi .layer:hover h3{
     bottom: 49%;
     opacity: 1;
 }
-.Populer-motor .layer nav, .Populer-mobil .layer nav{
+.Populer-motor .layer nav, .Populer-mobil .layer nav, .Populer-fotografi .layer nav{
     height: 100%;
     width: 100%;
     bottom: 0;
@@ -607,7 +607,7 @@ button.btn-daftar.active{
     align-items: end;
     transition: 0.5s;
 }
-.Populer-motor .layer nav button, .Populer-mobil .layer nav button{
+.Populer-motor .layer nav button, .Populer-mobil .layer nav button, .Populer-fotografi .layer nav button{
     font-size: 14px;
     font-weight: 600;
     color: #FFFFFF;
@@ -619,28 +619,28 @@ button.btn-daftar.active{
     transition: 0.2s;
     cursor: pointer;
 }
-.Populer-motor .layer:hover nav, .Populer-mobil .layer:hover nav{
+.Populer-motor .layer:hover nav, .Populer-mobil .layer:hover nav, .Populer-fotografi .layer:hover nav{
     bottom: 35%;
     opacity: 1;
 }
-.Populer-motor .layer nav button:hover, .Populer-mobil .layer nav button:hover{
+.Populer-motor .layer nav button:hover, .Populer-mobil .layer nav button:hover, .Populer-fotografi .layer nav button:hover{
     background: #007A7B;
 }
-.Terkait-motor, .Terkait-mobil{
+.Terkait-motor, .Terkait-mobil, .Terkait-fotografi{
     width: 100%;
     display: none;
 }
-.Terkait-motor.active, .Terkait-mobil.active{
+.Terkait-motor.active, .Terkait-mobil.active, .Terkait-fotografi.active{
     display: block;
 }
-.Terkait-motor ul, .Terkait-mobil .dispjm, .Terkait-mobil .dispjdm{
+.Terkait-motor ul, .Terkait-mobil .dispjm, .Terkait-mobil .dispjdm, .Terkait-fotografi .dispp, .Terkait-fotografi .dispjk{
     display: flex;
     flex-flow: wrap;
     list-style: none;
     padding: 20px 100px;
     justify-content: space-between;
 }
-.Terkait-motor ul li, .Terkait-mobil .dispjm li, .Terkait-mobil .dispjdm li{
+.Terkait-motor ul li, .Terkait-mobil .dispjm li, .Terkait-mobil .dispjdm li, .Terkait-fotografi .dispp li, .Terkait-fotografi .dispjk li{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -651,14 +651,14 @@ button.btn-daftar.active{
     justify-content: center;
     margin-bottom: 20px;
 }
-.Terkait-motor ul li img, .Terkait-mobil .dispjm li img, .Terkait-mobil .dispjdm li img{
+.Terkait-motor ul li img, .Terkait-mobil .dispjm li img, .Terkait-mobil .dispjdm li img, .Terkait-fotografi .dispp li img, .Terkait-fotografi .dispjk li img{
     width: 195px;
     border-radius: 10px;
     display: flex;
-    align-items: center ;
+    align-items: center;
     margin-top: 10px;
 }
-.Terkait-motor ul li .detail-layer, .Terkait-mobil .dispjm li .detail-layer, .Terkait-mobil .dispjdm li .detail-layer{
+.Terkait-motor ul li .detail-layer, .Terkait-mobil .dispjm li .detail-layer, .Terkait-mobil .dispjdm li .detail-layer, .Terkait-fotografi .dispp li .detail-layer, .Terkait-mobil .dispjk li .detail-layer{
     border-radius: 10px;
     top: 5px;
     background: transparent;
@@ -670,7 +670,7 @@ button.btn-daftar.active{
     align-items: center;
     transition: 0.5s;
 }
-.Terkait-motor ul li .detail-layer nav button, .Terkait-mobil .dispjm li .detail-layer nav button, .Terkait-mobil .dispjdm li .detail-layer nav button{
+.Terkait-motor ul li .detail-layer nav button, .Terkait-mobil .dispjm li .detail-layer nav button, .Terkait-mobil .dispjdm li .detail-layer nav button, .Terkait-fotografi .dispp li .detail-layer nav button, .Terkait-fotografi .dispjk li .detail-layer nav button{
     font-size: 14px;
     font-weight: 600;
     color: #FFFFFF;
@@ -687,17 +687,17 @@ button.btn-daftar.active{
     cursor: pointer;
     transition: 0.5s;
 }
-.Terkait-motor ul li .detail-layer:hover nav button, .Terkait-mobil .dispjm li .detail-layer:hover nav button, .Terkait-mobil .dispjdm li:hover nav button{
+.Terkait-motor ul li .detail-layer:hover nav button, .Terkait-mobil .dispjm li .detail-layer:hover nav button, .Terkait-mobil .dispjdm li:hover nav button, .Terkait-fotografi .dispp li:hover nav button, .Terkait-fotografi .dispjk li:hover nav button{
     bottom: 49%;
     opacity: 1;
 }
-.Terkait-motor ul li strong, .Terkait-mobil .dispjm li strong, .Terkait-mobil .dispjdm li strong{
+.Terkait-motor ul li strong, .Terkait-mobil .dispjm li strong, .Terkait-mobil .dispjdm li strong, .Terkait-fotografi .dispp li strong, .Terkait-fotografi .dispjk li strong{
     font-size: 16px;
     font-weight: 500;
     color: #000000;
     cursor: default;
 }
-.Terkait-motor ul li .toko, .Terkait-mobil .dispjm li .toko, .Terkait-mobil .dispjdm li .toko{
+.Terkait-motor ul li .toko, .Terkait-mobil .dispjm li .toko, .Terkait-mobil .dispjdm li .toko, .Terkait-fotografi .dispp li .toko, .Terkait-fotografi .dispjk li .toko{
     width: 100%;
     display: flex;
     align-items: center;
@@ -707,10 +707,10 @@ button.btn-daftar.active{
     padding: 0 5px;
     cursor: default;
 }
-.Terkait-motor ul li .toko i .fa, .fas,.Terkait-mobil .dispjm li .toko i .fa, .fas,.Terkait-mobil .dispjdm li .toko i .fa, .fas{
+.Terkait-motor ul li .toko i .fa, .fas,.Terkait-mobil .dispjm li .toko i .fa, .fas,.Terkait-mobil .dispjdm li .toko i .fa, .fas,.Terkait-fotografi .dispp li .toko i .fa, .fas ,.Terkait-fotografi .dispjk li .toko i .fa, .fas{
     font-size: 16px;
 }
-.Terkait-motor ul li .toko i span, .Terkait-mobil .dispjm li .toko i span, .Terkait-mobil .dispjdm li .toko i span{
+.Terkait-motor ul li .toko i span, .Terkait-mobil .dispjm li .toko i span, .Terkait-mobil .dispjdm li .toko i span,.Terkait-fotografi .dispp li .toko i span ,.Terkait-fotografi .dispjk li .toko i span{
     font-weight: 500;
     position: relative;
     left: 10px;
@@ -718,10 +718,10 @@ button.btn-daftar.active{
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
-.Terkait-motor ul li .toko i span:hover, .Terkait-mobil .dispjm li .toko i span:hover, .Terkait-mobil .dispjdm li .toko i span:hover{
+.Terkait-motor ul li .toko i span:hover, .Terkait-mobil .dispjm li .toko i span:hover, .Terkait-mobil .dispjdm li .toko i span:hover,.Terkait-fotografi .dispp li .toko i span:hover ,.Terkait-fotografi .dispjk li .toko i span:hover{
     color: #007A7B;
 }
-.Terkait-motor ul li .rating-rent, .Terkait-mobil .dispjm li .rating-rent, .Terkait-mobil .dispjdm li .rating-rent{
+.Terkait-motor ul li .rating-rent, .Terkait-mobil .dispjm li .rating-rent, .Terkait-mobil .dispjdm li .rating-rent, .Terkait-fotografi .dispp li .rating-rent, .Terkait-fotografi .dispjk li .rating-rent{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -730,15 +730,15 @@ button.btn-daftar.active{
     padding: 0 5px;
     cursor: default;
 }
-.Terkait-motor ul li .rating-rent .rating, .Terkait-mobil .dispjm li .rating-rent .rating, .Terkait-mobil .dispjdm li .rating-rent .rating{
+.Terkait-motor ul li .rating-rent .rating, .Terkait-mobil .dispjm li .rating-rent .rating, .Terkait-mobil .dispjdm li .rating-rent .rating,.Terkait-fotografi .dispp li .rating-rent .rating, .Terkait-fotografi .dispjk li .rating-rent .rating{
     font-size: 14px;
     color: #FFB703;
 }
-.Terkait-motor ul li .rating-rent div h4, .Terkait-mobil .dispjm li .rating-rent div h4, .Terkait-mobil .dispjdm li .rating-rent div h4{
+.Terkait-motor ul li .rating-rent div h4, .Terkait-mobil .dispjm li .rating-rent div h4, .Terkait-mobil .dispjdm li .rating-rent div h4,.Terkait-fotografi .dispp li .rating-rent div h4, .Terkait-fotografi .dispjk li .rating-rent div h4{
     font-size: 14px;
     font-weight: 500;
 }
-.Terkait-motor ul li .harga, .Terkait-mobil .dispjm li .harga, .Terkait-mobil .dispjdm li .harga{
+.Terkait-motor ul li .harga, .Terkait-mobil .dispjm li .harga, .Terkait-mobil .dispjdm li .harga,.Terkait-fotografi .dispp li .harga, .Terkait-fotografi .dispjk li .harga{
     position: relative;
     width: 100%;
     justify-content: flex-start;
@@ -748,13 +748,13 @@ button.btn-daftar.active{
     padding: 0 5px;
     cursor: default;
 }
-.Terkait-motor ul li .harga .nominal, .Terkait-mobil .dispjm li .harga .nominal, .Terkait-mobil .dispjdm li .harga .nominal{
+.Terkait-motor ul li .harga .nominal, .Terkait-mobil .dispjm li .harga .nominal, .Terkait-mobil .dispjdm li .harga .nominal,.Terkait-fotografi .dispp li .harga .nominal, .Terkait-fotografi .dispjk li .harga .nominal{
     margin-left: 5px;
 }
-.Terkait-motor ul li .harga .waktu, .Terkait-mobil .dispjm li .harga .waktu, .Terkait-mobil .dispjdm li .harga .waktu{
+.Terkait-motor ul li .harga .waktu, .Terkait-mobil .dispjm li .harga .waktu, .Terkait-mobil .dispjdm li .harga .waktu,.Terkait-fotografi .dispp li .harga .waktu, .Terkait-fotografi .dispjk li .harga .waktu{
     font-size: 10px;
 }
-.Terkait-motor ul li .nav-terkait, .Terkait-mobil .dispjm li .nav-terkait, .Terkait-mobil .dispjdm li .nav-terkait{
+.Terkait-motor ul li .nav-terkait, .Terkait-mobil .dispjm li .nav-terkait, .Terkait-mobil .dispjdm li .nav-terkait,.Terkait-fotografi .dispp li .nav-terkait, .Terkait-fotografi .dispjk li .nav-terkait{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -762,21 +762,21 @@ button.btn-daftar.active{
     position: relative;
     margin-bottom: 10px;
 }
-.Terkait-motor ul li .nav-terkait .cart, .Terkait-mobil .dispjm li .nav-terkait .cart, .Terkait-mobil .dispjdm li .nav-terkait .cart{
+.Terkait-motor ul li .nav-terkait .cart, .Terkait-mobil .dispjm li .nav-terkait .cart, .Terkait-mobil .dispjdm li .nav-terkait .cart,.Terkait-fotografi .dispp li .nav-terkait .cart, .Terkait-fotografi .dispjk li .nav-terkait .cart{
     display: flex;
     align-items: center;
 }
-.Terkait-motor ul li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated{
+.Terkait-motor ul li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated,.Terkait-fotografi .dispp li .nav-terkait .cart .md.hydrated, .Terkait-fotografi .dispjk li .nav-terkait .cart .md.hydrated{
     font-size: 20px;
     transform: scale(1);
     transition: 0.5s;
     cursor: pointer;
 }
-.Terkait-motor ul li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated:hover{
+.Terkait-motor ul li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjm li .nav-terkait .cart .md.hydrated:hover, .Terkait-mobil .dispjdm li .nav-terkait .cart .md.hydrated:hover,.Terkait-fotografi .dispp li .nav-terkait .cart .md.hydrated:hover, .Terkait-fotografi .dispjk li .nav-terkait .cart .md.hydrated:hover{
     color: #666;
     transform: scale(1.2);
 }
-.Terkait-motor ul li .nav-terkait .booknow button, .Terkait-mobil .dispjm li .nav-terkait .booknow button, .Terkait-mobil .dispjdm li .nav-terkait .booknow button{
+.Terkait-motor ul li .nav-terkait .booknow button, .Terkait-mobil .dispjm li .nav-terkait .booknow button, .Terkait-mobil .dispjdm li .nav-terkait .booknow button,.Terkait-fotografi .dispp li .nav-terkait .booknow button, .Terkait-fotografi .dispjk li .nav-terkait .booknow button{
     font-size: 16px;
     font-weight: 600;
     background: #007A7B;
@@ -787,20 +787,20 @@ button.btn-daftar.active{
     cursor: pointer;
     transition: 0.5s;
 }
-.Terkait-motor ul li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjm li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjdm li .nav-terkait .booknow button:hover{
+.Terkait-motor ul li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjm li .nav-terkait .booknow button:hover, .Terkait-mobil .dispjdm li .nav-terkait .booknow button:hover,.Terkait-fotografi .dispp li .nav-terkait .booknow button:hover, .Terkait-fotografi .dispjk li .nav-terkait .booknow button:hover{
     background: #000000;
 }
-.Terkait-mobil .navmenumobil{
+.Terkait-mobil .navmenumobil, .Terkait-fotografi .navmenufotografi{
     display: flex;
     list-style: none;
     padding: 20px 100px;
     justify-content: space-between;
     display: none;
 }
-.Terkait-mobil .navmenumobil.active{
+.Terkait-mobil .navmenumobil.active, .Terkait-fotografi .navmenufotografi.active{
     display: flex;
 }
-.Terkait-mobil .navmenumobil li{
+.Terkait-mobil .navmenumobil li, .Terkait-fotografi .navmenufotografi li{
     height: 320px;
     width: 250px;
     border-radius: 10px;
@@ -811,7 +811,7 @@ button.btn-daftar.active{
     cursor: pointer;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.Terkait-mobil .navmenumobil li img{
+.Terkait-mobil .navmenumobil li img, .Terkait-fotografi .navmenufotografi li img{
     transform: scale(1);
     transition: 0.5s;
 }
@@ -831,7 +831,16 @@ button.btn-daftar.active{
     width: 200px;
     position: absolute;
 }
-.Terkait-mobil .navmenumobil li div{
+.Terkait-fotografi .navmenufotografi .nav-p img{
+    width: 220px;
+}
+.Terkait-fotografi .navmenufotografi .nav-c img{
+    width: 150px;
+}
+.Terkait-fotografi .navmenufotografi .nav-ac img{
+    width: 220px;
+}
+.Terkait-mobil .navmenumobil li div, .Terkait-fotografi .navmenufotografi li div{
     width: 250px;
     height: 320px;
     position: absolute;
@@ -842,10 +851,10 @@ button.btn-daftar.active{
     transition: 0.5s;
     border-radius: 10px;
 }
-.Terkait-mobil .navmenumobil li:hover{
+.Terkait-mobil .navmenumobil li:hover, .Terkait-fotografi .navmenufotografi li:hover{
     background-color: rgba(0, 122, 123, 0.33);
 }
-.Terkait-mobil .navmenumobil li:hover h3{
+.Terkait-mobil .navmenumobil li:hover h3, .Terkait-fotografi .navmenufotografi li:hover h3{
     transform: scale(1.2);
     margin-top: 50px;
     font-size: 20px;
@@ -853,13 +862,13 @@ button.btn-daftar.active{
     color: #FFFFFF;
     text-shadow: 2px 2px 4px #666;
 }
-.Terkait-mobil .navmenumobil li .dmtext{
+.Terkait-mobil .navmenumobil li .dmtext, .Terkait-fotografi .navmenufotografi li .dmtext{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Terkait-mobil .navmenumobil li .dmtext span{
+.Terkait-mobil .navmenumobil li .dmtext span, .Terkait-fotografi .navmenufotografi li .dmtext span{
     bottom: -20px;
     position: absolute;
     width: 100%;
@@ -867,24 +876,24 @@ button.btn-daftar.active{
     align-items: center;
     display: flex;
 }
-.Terkait-mobil .navmenumobil li:hover .dmtext span{
+.Terkait-mobil .navmenumobil li:hover .dmtext span, .Terkait-fotografi .navmenufotografi li:hover .dmtext span{
     bottom: -20px;
 }
-.Terkait-mobil .navmenumobil li:hover .dmtext{
+.Terkait-mobil .navmenumobil li:hover .dmtext, .Terkait-fotografi .navmenufotografi li:hover .dmtext{
     margin-top: 30px;
 }
-.Terkait-mobil .navmenumobil li:hover img{
+.Terkait-mobil .navmenumobil li:hover img, .Terkait-fotografi .navmenufotografi li:hover img{
     transform: scale(1.1);
     margin-bottom: 10px;
 }
-.Terkait-mobil .navmenumobil li div h3{
+.Terkait-mobil .navmenumobil li div h3, .Terkait-fotografi .navmenufotografi li div h3{
     font-size: 18px;
     letter-spacing: 2px;
     margin-top: 20px;
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
-.Terkait-mobil .dispjm .backnav, .Terkait-mobil .dispjdm .backnav{
+.Terkait-mobil .dispjm .backnav, .Terkait-mobil .dispjdm .backnav, .Terkait-fotografi .dispp .backnav, .Terkait-fotografi .dispjk .backnav{
     display: flex;
     position: absolute;
     width: 100%;
@@ -893,27 +902,27 @@ button.btn-daftar.active{
     top: 205px;
     margin-left: 10px;
 }
-.Terkait-mobil .dispjm .backnav i, .Terkait-mobil .dispjdm .backnav i{
+.Terkait-mobil .dispjm .backnav i, .Terkait-mobil .dispjdm .backnav i, .Terkait-fotografi .dispp .backnav, .Terkait-fotografi .dispjk .backnav{
     margin-right: 10px;
     cursor: pointer;
 }
-.Terkait-mobil .dispjm .backnav h4, .Terkait-mobil .dispjdm .backnav h4{
+.Terkait-mobil .dispjm .backnav h4, .Terkait-mobil .dispjdm .backnav h4, .Terkait-fotografi .dispp .backnav h4, .Terkait-fotografi .dispjk .backnav h4{
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 2px;
     color: #666;
     cursor: default;
 }
-.Terkait-mobil .dispjm .backnav h4 span, .Terkait-mobil .dispjdm .backnav h4 span{
+.Terkait-mobil .dispjm .backnav h4 span, .Terkait-mobil .dispjdm .backnav h4 span, .Terkait-fotografi .dispp .backnav h4 span, .Terkait-fotografi .dispjk .backnav h4 span{
     text-decoration: underline;
 }
-.Terkait-mobil .dispjm .backnav:hover, .Terkait-mobil .dispjdm .backnav:hover{
+.Terkait-mobil .dispjm .backnav:hover, .Terkait-mobil .dispjdm .backnav:hover, .Terkait-fotografi .dispp .backnav:hover, .Terkait-fotografi .dispjk .backnav:hover{
     color: #007A7B;
 }
-.Terkait-mobil .dispjm, .Terkait-mobil .dispjdm{
+.Terkait-mobil .dispjm, .Terkait-mobil .dispjdm, .Terkait-fotografi .dispp, .Terkait-fotografi .dispjk{
     display: none;
 }
-.Terkait-mobil .dispjm.active, .Terkait-mobil .dispjdm.active{
+.Terkait-mobil .dispjm.active, .Terkait-mobil .dispjdm.active, .Terkait-fotografi .dispp.active, .Terkait-fotografi .dispjk.active{
     display: flex;
 }
 /* Artikel Section */

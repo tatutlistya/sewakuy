@@ -102,11 +102,42 @@ const terkait = document.querySelector(".terkait");
 const populermotor = document.querySelector(".Populer-motor");
 const terkaitmotor = document.querySelector(".Terkait-motor"); 
 
+const navsmobil = document.querySelector("#mobil-disp");
+const dispmobil = document.querySelector(".Layanan-mobil");
+const terpopulerm = document.querySelector(".Layanan-mobil .terpopuler");
+const terkaitm = document.querySelector(".Layanan-mobil .terkait");
+const populermobil = document.querySelector(".Populer-mobil");
+const terkaitmobil = document.querySelector(".Terkait-mobil"); 
+const menunavmobil = document.querySelector (".navmenumobil");
+const navmobil = document.querySelector(".nav-m");
+const navdmobil = document.querySelector(".nav-dm");
+const dispjm = document.querySelector(".dispjm");
+const dispjdm = document.querySelector(".dispjdm");
+const backnavm = document.querySelector(".dispjm .backnav");
+const backnavdm = document.querySelector(".dispjdm .backnav");
+
+const navsfotografi = document.querySelector("#fotografi-disp");
+const dispfotografi = document.querySelector(".Layanan-fotografi");
+const terpopulerf = document.querySelector(".Layanan-fotografi .terpopuler");
+const terkaitf = document.querySelector(".Layanan-fotografi .terkait");
+const populerfotografi = document.querySelector(".Populer-fotografi");
+const terkaitfotografi = document.querySelector(".Terkait-fotografi"); 
+const menunavfotografi = document.querySelector (".navmenufotografi");
+const navfotografer = document.querySelector(".nav-p");
+const navkamera = document.querySelector(".nav-c");
+const dispp = document.querySelector(".dispp");
+const dispjk = document.querySelector(".dispjk");
+const backnavp = document.querySelector(".dispp .backnav");
+const backnavjk = document.querySelector(".dispjk .backnav");
+
+
 navspdmotor.onclick = (()=>{
     navspdmotor.classList.add('active');
     dispmotor.classList.add('active');
-    navmobil.classList.remove('active');
+    navsmobil.classList.remove('active');
     dispmobil.classList.remove('active');
+    navsfotografi.classList.remove('active');
+    dispfotografi.classList.remove('active');
 });
 
 terkait.onclick = (()=>{
@@ -123,25 +154,14 @@ terpopuler.onclick = (()=>{
 });
 
 //Javascript for Mobil//
-const navsmobil = document.querySelector("#mobil-disp");
-const dispmobil = document.querySelector(".Layanan-mobil");
-const terpopulerm = document.querySelector(".Layanan-mobil .terpopuler");
-const terkaitm = document.querySelector(".Layanan-mobil .terkait");
-const populermobil = document.querySelector(".Populer-mobil");
-const terkaitmobil = document.querySelector(".Terkait-mobil"); 
-const menunavmobil = document.querySelector (".navmenumobil");
-const navmobil = document.querySelector(".nav-m");
-const navdmobil = document.querySelector(".nav-dm");
-const dispjm = document.querySelector(".dispjm");
-const dispjdm = document.querySelector(".dispjdm");
-const backnavm = document.querySelector(".dispjm .backnav");
-const backnavdm = document.querySelector(".dispjdm .backnav");
 
 navsmobil.onclick = (()=>{
     navsmobil.classList.add('active');
     dispmobil.classList.add('active');
     navspdmotor.classList.remove('active');
     dispmotor.classList.remove('active');
+    navsfotografi.classList.remove('active');
+    dispfotografi.classList.remove('active');
 });
 
 terkaitm.onclick = (()=>{
@@ -171,9 +191,47 @@ backnavm.onclick = (()=>{
 backnavdm.onclick = (()=>{
     menunavmobil.classList.add('active');
     dispjdm.classList.remove('active');
-})
+});
 
+//Javascript for Fotografi//
 
+navsfotografi.onclick = (()=>{
+    navsfotografi.classList.add('active');
+    dispfotografi.classList.add('active');
+    navspdmotor.classList.remove('active');
+    navsmobil.classList.remove('active');
+    dispmotor.classList.remove('active');
+    dispmobil.classList.remove('active');
+});
+
+terkaitf.onclick = (()=>{
+    terkaitf.classList.add('active');
+    terpopulerf.classList.remove('active');
+    terkaitfotografi.classList.add('active');
+    populerfotografi.classList.remove('active');
+});
+terpopulerf.onclick = (()=>{
+    terkaitf.classList.remove('active');
+    terpopulerf.classList.add('active');
+    terkaitfotografi.classList.remove('active');
+    populerfotografi.classList.add('active');
+});
+navfotografer.onclick = (()=>{
+    menunavfotografi.classList.remove('active');
+    dispp.classList.add('active');
+});
+navkamera.onclick = (()=>{
+    menunavfotografi.classList.remove('active');
+    dispjk.classList.add('active');
+});
+backnavp.onclick = (()=>{
+    menunavfotografi.classList.add('active');
+    dispp.classList.remove('active');
+});
+backnavjk.onclick = (()=>{
+    menunavfotografi.classList.add('active');
+    dispjk.classList.remove('active');
+});
 
 
 // Javascript for Location //
